@@ -19,31 +19,94 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
+#Developed By: Kannan.S
+#Register No: 212223230098
 
-
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
+
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
+#Developed By: Kannan.S
+#Register No: 212223230098
 
-
-
-
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
+
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
+#Developed By: Kannan.S
+#Register No: 212223230098
 
-
-
-
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
-## Sample Input and Output
 
+## Sample Input and Output:
+i) #Use a linear search method to match the item in a list.
 
+![unit 3 exp 7(i)](https://github.com/Kannan-S-coder/Search-Algorithms/assets/147120710/cf45c28f-6981-4fbc-9766-aeeadf1d9942)
 
+ii) #Find the element in a list using Binary Search(Iterative Method).
 
+![unit 3 exp 7(ii)](https://github.com/Kannan-S-coder/Search-Algorithms/assets/147120710/1247e4b9-430d-42b7-90ad-791c9ec34710)
+
+iii) # Find the element in a list using Binary Search (recursive Method).
+
+![unit 3 exp 7(iii)](https://github.com/Kannan-S-coder/Search-Algorithms/assets/147120710/7f669ddc-f8a8-480d-ac8e-53544703a750)
 
 
 ## Result
